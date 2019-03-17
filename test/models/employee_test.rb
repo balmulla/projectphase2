@@ -11,4 +11,9 @@ class EmployeeTest < ActiveSupport::TestCase
   should validate_presence_of(:date_of_birth) 
   should validate_presence_of(:role)
   should validate_presence_of(:ssn) 
+  
+  should allow_value(16.year.ago.to_date).for(:date_of_birth)
+  should_not allow_value("string").for(:date_of_birth)
+  should_not allow_value(123232).for(:date_of_birth)
+  
 end

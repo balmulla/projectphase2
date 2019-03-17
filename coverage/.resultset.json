@@ -3,9 +3,12 @@
     "coverage": {
       "/home/ubuntu/workspace/phase2/app/models/employee.rb": [
         1,
+        null,
         1,
         1,
         null,
+        null,
+        1,
         1,
         null,
         null
@@ -59,6 +62,6 @@
         0
       ]
     },
-    "timestamp": 1552847200
+    "timestamp": 1552848016
   }
 }
