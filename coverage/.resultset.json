@@ -1,7 +1,7 @@
 {
   "MiniTest": {
     "coverage": {
-      "/home/ubuntu/workspace/phase2/app/models/employee.rb": [
+      "/home/ubuntu/workspace/phase2/app/models/store.rb": [
         1,
         1,
         1,
@@ -31,7 +31,9 @@
         0,
         0
       ],
-      "/home/ubuntu/workspace/phase2/app/models/store.rb": [
+      "/home/ubuntu/workspace/phase2/app/models/employee.rb": [
+        0,
+        0,
         0,
         0
       ],
@@ -52,6 +54,6 @@
         0
       ]
     },
-    "timestamp": 1552846050
+    "timestamp": 1552846486
   }
 }
