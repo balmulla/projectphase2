@@ -1,7 +1,6 @@
 require 'test_helper'
 
 class AssignmentTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+    should belong_to(:employee)
+    should belong_to(:store)
 end
