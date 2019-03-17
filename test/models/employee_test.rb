@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class EmployeeTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  #Association tests
+  should have_many(:assignments)
+  should have_many(:stores).through(:assignments) 
+  
 end
