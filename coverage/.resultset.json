@@ -1,7 +1,7 @@
 {
   "MiniTest": {
     "coverage": {
-      "/home/ubuntu/workspace/phase2/app/models/employee.rb": [
+      "/home/ubuntu/workspace/phase2/app/models/store.rb": [
         1,
         null,
         1,
@@ -9,10 +9,6 @@
         null,
         null,
         1,
-        1,
-        1,
-        1,
-        null,
         null
       ],
       "/home/ubuntu/workspace/phase2/app/models/application_record.rb": [
@@ -26,7 +22,14 @@
         1,
         null
       ],
-      "/home/ubuntu/workspace/phase2/app/models/store.rb": [
+      "/home/ubuntu/workspace/phase2/app/models/employee.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
         1,
         1,
         1,
@@ -64,6 +67,6 @@
         0
       ]
     },
-    "timestamp": 1552852462
+    "timestamp": 1552852820
   }
 }

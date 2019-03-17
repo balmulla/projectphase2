@@ -8,5 +8,4 @@ class Employee < ApplicationRecord
     validates_datetime :date_of_birth
     validates :ssn, format: { with: /(\d{3}-\d{2}-\d{4})|(\d{9})/}
     validates :phone, format: { with: /(^[\d -]+$)/}
-    
 end
