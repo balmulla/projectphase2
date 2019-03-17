@@ -9,6 +9,12 @@
         null,
         null,
         1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null
       ],
       "/home/ubuntu/workspace/phase2/app/models/application_record.rb": [
@@ -67,6 +73,6 @@
         0
       ]
     },
-    "timestamp": 1552852820
+    "timestamp": 1552854827
   }
 }
