@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190317160640) do
+ActiveRecord::Schema.define(version: 20190318194911) do
 
   create_table "assignments", force: :cascade do |t|
     t.integer "store_id"
@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20190317160640) do
     t.string "name"
     t.string "street"
     t.string "city"
-    t.string "state"
+    t.string "state", default: "PA"
     t.string "zip"
     t.string "phone"
     t.float "latitude"
