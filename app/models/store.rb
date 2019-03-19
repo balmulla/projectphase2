@@ -14,4 +14,6 @@ class Store < ApplicationRecord
     
     #scopes
     scope :alphabetically, -> { order('name ASC') }
+    scope :active, -> { where('active =?', true) }
+    scope :inactive, -> { where('active =?', false) }
 end

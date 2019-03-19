@@ -59,8 +59,16 @@ class StoreTest < ActiveSupport::TestCase
     end
     
     should "have a scope to order alphabetically by store name" do
-      assert_equal ["CMU","Park","CMU1"],Store.alphabetically.map{|c| c.name}
+      assert_equal ["CMU","Park","Studio"],Store.alphabetically.map{|c| c.name}
     end
+    
+    should "have a scope to return only active stores" do
+      assert_equal ["CMU","Studio"],Store.active.map{|c| c.name}
+    end
+
+    should "have a scope to return only inactive stores" do
+      assert_equal ["Park"],Store.inactive.map{|c| c.name}
+    end    
      
   end
 end
