@@ -14,9 +14,13 @@ FactoryBot.define do
   factory :store do
     name {"CMU"}
     street {"5001 Forbes Ave"}
+    #city {"pittsburgh"}
     state {"PA"}
-    zip {"1523"}
-    active {1}
+    zip {"15235"}
+    #phone {4122683259}
+    #latitude {23.5}
+    #longitude {23.5}
+    active {true}
   end
 
   # factory blueprint for assignments

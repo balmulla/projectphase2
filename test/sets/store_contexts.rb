@@ -2,14 +2,19 @@ module Contexts
     module StoreContexts
         def create_stores
             @cmu = FactoryBot.create(:store)
-            @park = FactoryBot.create(:store, name: "Park", active: 0)
-            @store = FactoryBot.create(:store, name: "Store")
+            #puts @cmu
+            @park = FactoryBot.create(:store, name: "Park", active: false)
+            @cmu1 = FactoryBot.create(:store, name: "CMU1")
+            puts @cmu
+            puts @park
+            puts @cmu1
         end
   
-        def destroy_stores
+        def remove_stores
+            #puts @cmu
             @cmu.destroy
             @park.destroy
-            @store.destroy
+            @cmu1.destroy
         end
     end
 end
