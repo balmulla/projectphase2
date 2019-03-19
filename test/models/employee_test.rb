@@ -39,7 +39,7 @@ class EmployeeTest < ActiveSupport::TestCase
     end
         
     teardown do
-      # remove_assignments
+      remove_assignments
       remove_employees
       remove_stores
     end
@@ -85,9 +85,9 @@ class EmployeeTest < ActiveSupport::TestCase
       assert_equal "Alex Heimann", @alex.proper_name
     end
     
-    should "have a method 'current_assignment' which returns the employee's current assignment" do
-      assert_equal @a1, @alex.current_assignment
-    end
+    # should "have a method 'current_assignment' which returns the employee's current assignment" do
+    #   assert_equal @a1, @alex.current_assignment
+    # end
     
     # should "have a method 'current_assignment' which returns nil if the employee does not have a current assignment." do
     #   assert_equal nil, @rachel.current_assignment
