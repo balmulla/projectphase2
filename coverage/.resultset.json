@@ -1,58 +1,6 @@
 {
   "MiniTest": {
     "coverage": {
-      "/home/ubuntu/workspace/phase2/app/models/assignment.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/phase2/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/phase2/app/models/employee.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/phase2/app/models/store.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null
-      ],
       "/home/ubuntu/workspace/phase2/app/controllers/application_controller.rb": [
         0,
         0,
@@ -64,6 +12,77 @@
       ],
       "/home/ubuntu/workspace/phase2/app/mailers/application_mailer.rb": [
         0,
+        0,
+        0,
+        0
+      ],
+      "/home/ubuntu/workspace/phase2/app/models/assignment.rb": [
+        0,
+        null,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0
+      ],
+      "/home/ubuntu/workspace/phase2/app/models/store.rb": [
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/ubuntu/workspace/phase2/app/models/employee.rb": [
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/ubuntu/workspace/phase2/app/models/application_record.rb": [
         0,
         0,
         0
@@ -85,6 +104,6 @@
         0
       ]
     },
-    "timestamp": 1553000126
+    "timestamp": 1553004372
   }
 }

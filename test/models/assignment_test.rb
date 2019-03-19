@@ -24,4 +24,22 @@ class AssignmentTest < ActiveSupport::TestCase
     
     should validate_numericality_of(:pay_level)
     should_not allow_value(1.3).for(:pay_level)
+    
+    context "Creating a set of stores" do
+        setup do
+            create_employees
+            create_stores
+            create_assignments
+        end
+        
+        teardown do
+            remove_assignments
+            remove_employees
+            remove_stores
+        end
+        
+        should "have a scope that orders employees alphabetically by first_name" do
+            assert_equal ["Alex","Juan","Mark","Rachel"], Employee.alphabetical.map{|c| c.first_name}
+        end
+    end
 end

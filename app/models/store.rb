@@ -13,7 +13,7 @@ class Store < ApplicationRecord
     validates :name, uniqueness: true
     
     #scopes
-    scope :alphabetically, -> { order('name ASC') }
+    scope :alphabetical, -> { order('name ASC') }
     scope :active, -> { where('active =?', true) }
     scope :inactive, -> { where('active =?', false) }
 end
