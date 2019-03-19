@@ -20,6 +20,7 @@ class AssignmentTest < ActiveSupport::TestCase
     should allow_value(1.day.ago.to_date).for(:end_date)
     should_not allow_value("string").for(:end_date)
     should_not allow_value(123232).for(:end_date)
+    should allow_value(nil).for(:end_date)
     
     should validate_numericality_of(:pay_level)
     should_not allow_value(1.3).for(:pay_level)
