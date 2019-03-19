@@ -28,7 +28,18 @@ class Employee < ApplicationRecord
         self.first_name+" "+self.last_name
     end
     #will do after assignment scopes are done
-    # def current_assignment
-        
-    # end
+    def current_assignment
+        @a=Assignment.current.for_employee(self)
+        @result = @a[0]
+    end
+    
+    def over_18?
+        return self.date_of_birth < 18.year.ago.to_date
+    end
+    
+    def age
+        @now= Date.today
+        @date= self.date_of_birth
+        return @now.year - @date.year
+    end
 end

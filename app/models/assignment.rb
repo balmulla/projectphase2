@@ -7,7 +7,6 @@ class Assignment < ApplicationRecord
     validates_datetime :start_date
     validates_datetime :end_date, allow_nil: true
     validates :pay_level, numericality: { only_integer: true }
-    
     #scopes
     scope :chronological, -> { order('start_date DESC') }
     scope :current, -> { where('end_date IS NULL') }

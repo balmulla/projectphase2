@@ -85,13 +85,25 @@ class EmployeeTest < ActiveSupport::TestCase
       assert_equal "Alex Heimann", @alex.proper_name
     end
     
-    # should "have a method 'current_assignment' which returns the employee's current assignment" do
-    #   assert_equal @a1, @alex.current_assignment
-    # end
+    should "have a method 'current_assignment' which returns the employee's current assignment" do
+      assert_equal @a1, @alex.current_assignment
+    end
     
-    # should "have a method 'current_assignment' which returns nil if the employee does not have a current assignment." do
-    #   assert_equal nil, @rachel.current_assignment
-    # end
+    should "have a method 'current_assignment' which returns nil if the employee does not have a current assignment." do
+      assert_equal nil, @rachel.current_assignment
+    end
+    
+    should "have a method 'over_18?' which returns a boolean indicating whether this employee is over 18 " do
+      assert_equal false, @rachel.over_18?
+    end
+    
+    should "have a method 'over_18?' which returns a boolean indicating whether this employee is not over 18" do
+      assert_equal true, @juan.over_18?
+    end
+    
+    should "have a method 'age' -- which returns the employee's current age" do
+      assert_equal 25, @juan.age
+    end
     
      
   end
