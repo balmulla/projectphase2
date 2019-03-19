@@ -27,10 +27,10 @@ module Contexts
    end
 
    def create_assignments
-      @a1 = FactoryBot.create(:assignment, child: @alex, store: @cmu, start_date: 1.month.ago.to_date)
-      @m1 = FactoryBot.create(:assignment, child: @mark, store: @park, pay_level: 6)
-      @r1 = FactoryBot.create(:assignment, child: @rachel, store: @cmu, pay_level: 3, end_date: 1.day.ago.to_date)
-      @a2 = FactoryBot.create(:assignment, child: @alex, store: @studio, end_date: 1.month.ago.to_date)
+      @a1 = FactoryBot.create(:assignment, employee: @alex, store: @cmu, start_date: 1.month.ago.to_date)
+      @m1 = FactoryBot.create(:assignment, employee: @mark, store: @park, pay_level: 6)
+      @r1 = FactoryBot.create(:assignment, employee: @rachel, store: @cmu, pay_level: 3, end_date: 1.day.ago.to_date)
+      @a2 = FactoryBot.create(:assignment, employee: @alex, store: @studio, end_date: 1.month.ago.to_date)
    end
   
    def remove_assignments

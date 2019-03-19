@@ -1,24 +1,6 @@
 {
   "MiniTest": {
     "coverage": {
-      "/home/ubuntu/workspace/phase2/app/models/assignment.rb": [
-        1,
-        null,
-        1,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/phase2/app/models/application_record.rb": [
-        1,
-        1,
-        null
-      ],
       "/home/ubuntu/workspace/phase2/app/models/employee.rb": [
         1,
         null,
@@ -28,6 +10,30 @@
         null,
         1,
         1,
+        1,
+        1,
+        null,
+        null,
+        9,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/phase2/app/models/application_record.rb": [
         1,
         1,
         null
@@ -51,6 +57,19 @@
         1,
         1,
         1,
+        null
+      ],
+      "/home/ubuntu/workspace/phase2/app/models/assignment.rb": [
+        1,
+        null,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/home/ubuntu/workspace/phase2/app/controllers/application_controller.rb": [
@@ -85,6 +104,6 @@
         0
       ]
     },
-    "timestamp": 1553000126
+    "timestamp": 1553005786
   }
 }

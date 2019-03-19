@@ -30,4 +30,70 @@ class EmployeeTest < ActiveSupport::TestCase
   should_not allow_value("412-268$8211").for(:phone)
   should allow_value(nil).for(:phone)
   
+  context "Creating a set of stores" do
+    setup do
+      create_employees
+      create_stores
+      create_assignments
+
+    end
+        
+    teardown do
+      # remove_assignments
+      remove_employees
+      remove_stores
+    end
+    
+    should "have a scope that orders employees alphabetically by first_name" do
+      assert_equal ["Alex","Juan","Mark","Rachel"], Employee.alphabetical.map{|c| c.first_name}
+    end
+    
+    should "have a scope to return all employees under 18" do
+      assert_equal ["Alex","Rachel"],Employee.younger_than_18.alphabetical.map{|c| c.first_name}
+    end
+    
+    should "have a scope to return all employees 18 years or older" do
+      assert_equal ["Juan","Mark"],Employee.is_18_or_older.alphabetical.map{|c| c.first_name}
+    end
+
+    should "have a scope to return all active employees" do
+      assert_equal ["Alex","Mark"],Employee.active.alphabetical.map{|c| c.first_name}
+    end  
+    
+    should "have a scope to return all inactive employees" do
+      assert_equal ["Juan","Rachel"],Employee.inactive.alphabetical.map{|c| c.first_name}
+    end
+    
+    should "have a scope to return all employees with role employees" do
+      assert_equal ["Alex","Rachel"],Employee.regulars.alphabetical.map{|c| c.first_name}
+    end
+    
+    should "have a scope to return all employees with role manager" do
+      assert_equal ["Juan"],Employee.managers.alphabetical.map{|c| c.first_name}
+    end
+    
+    should "have a scope to return all employees with role admin" do
+      assert_equal ["Mark"],Employee.admins.alphabetical.map{|c| c.first_name}
+    end
+    
+    #methods
+    should "have a method name which returns the employee name as a string last_name, first_name in that order" do
+      assert_equal "Heimann, Alex", @alex.name
+    end
+    
+    should "have a method proper_name which returns the employee name as a string first_name last_name in that order" do
+      assert_equal "Alex Heimann", @alex.proper_name
+    end
+    
+    should "have a method 'current_assignment' which returns the employee's current assignment" do
+      assert_equal @a1, @alex.current_assignment
+    end
+    
+    # should "have a method 'current_assignment' which returns nil if the employee does not have a current assignment." do
+    #   assert_equal nil, @rachel.current_assignment
+    # end
+    
+     
+  end
+  
 end
